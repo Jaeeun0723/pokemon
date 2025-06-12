@@ -7,11 +7,10 @@ export default function Detail () {
     const pokemon = useSelector(selectPokemonById(Number(pokemonId)))
     console.log(pokemon)
     return(
-    <div>
-        
+    <div className="flex flex-col justify-center items-center border border-[gray] p-[30px] rounded-[10px]">
+        <div className="text-[28px] mb-[10px]">{pokemon.name} </div>
+        <div className="whitespace-pre-wrap text-center">{pokemon.description} </div>
+        <img className="w-[200px]" src={pokemon.front}/>
     </div>
     )
 } 
-{/* <div>{pokemon.name} </div>
-        <div>{pokemon.description} </div>
-        <img src={pokemon.front}/> */}
