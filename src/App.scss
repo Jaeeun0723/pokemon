@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+main {
+    section{
+        background-color: rgba(255, 255, 255, 0.651);
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+            filter: drop-shadow(0 0 5px gray)
+        }
+    }
+}
